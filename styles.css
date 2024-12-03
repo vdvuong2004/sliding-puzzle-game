@@ -1,0 +1,63 @@
+body {
+    font-family: "Yuji Mai", sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin: 20px 0;
+}
+#puzzle {
+    display: grid;
+    grid-template-columns: repeat(5, 120px);
+    grid-template-rows: repeat(5, 120px);
+    gap: 2px;
+    justify-content: center;
+    margin: 20px auto;
+}
+.tile {
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+    
+}
+.empty {
+    background-color: #ddd;
+    cursor: default;
+}
+#controls {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    /* margin-top: 20px; */
+}
+
+#rightbar {
+    width: 608px;
+    height: 608px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+#container, div {display:flex;	}	
+	div, div {flex:1}
+	article:nth-of-type(2) { flex: 2;}
+
+	@media (max-width:900px) {
+		#container {display:block;	}
+	}
+
+	@media (max-width:600px) {
+		 div { display:block; }
+	}
+
+#leftbar {
+    display:grid;
+}
